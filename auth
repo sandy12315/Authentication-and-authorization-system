@@ -1,1 +1,10 @@
 class User:
+	def __init__(self, user, password):
+		self.user = user
+		self.password = password
+		self.is_logged_in = False
+
+	def check_password(self):
+		
+	def encrypted(self):
+		
