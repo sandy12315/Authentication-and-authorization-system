@@ -1,10 +1,6 @@
-class User:
-	def __init__(self, user, password):
-		self.user = user
-		self.password = password
-		self.is_logged_in = False
+au = Authorizor(authenticator)
+authenticator.add_user('sandy12315', '271109584')
+authenticator.log_in('sandy12315', '271109584')
+au.add_permision('access_to_articles')
+au.permit_user('access_to_articles', 'sandy12315')
 
-	def check_password(self):
-		
-	def encrypted(self):
-		
