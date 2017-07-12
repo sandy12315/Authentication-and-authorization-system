@@ -1,6 +1,7 @@
 au = Authorizor(authenticator)
 authenticator.add_user('sandy12315', '271109584')
 authenticator.log_in('sandy12315', '271109584')
+authenticator.is_logged_in('sandy12315')
 au.add_permission('access_to_articles')
 au.permit_user('access_to_articles', 'sandy12315')
-
+au.check_permission('access_to_articles', 'sandy12315')
